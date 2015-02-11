@@ -122,13 +122,8 @@ alias down='sudo lxc-stop -n `cat .vagrant/machines/default/lxc/id`'
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-# enable gibo completion
-source ~/.gibo-completion.bash
 
 export TERM="xterm-256color"
-
-# git svn bash prompt
-#source ~/.git_svn_bash_prompt
 
 # enable python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
