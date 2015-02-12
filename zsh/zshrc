@@ -46,7 +46,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man colorize cp extract autojump bower github postgres redis-cli npm fabric pip celery debian git django python tmux virtualenv virtualenvwrapper vagrant web-search)
+plugins=(colored-man colorize cp extract autojump bower github postgres redis-cli npm fabric pip celery debian git django python sudo tmux virtualenv virtualenvwrapper vagrant web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,6 +65,9 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# TMUX
+export ZSH_TMUX_AUTOSTART=true
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
