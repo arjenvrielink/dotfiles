@@ -28,6 +28,20 @@
         "d3"       // d3 JS vector library
     ],
 
+    "globals": {
+        "$": false,
+        "jasmine": true,
+        "it": true,
+        "describe": true,
+        "expect": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "spyOn": false,
+        "runs": false,
+        "module": true,
+        "inject": true
+    },
+
 
     // Development.
     "debug"         : false,  // Allow debugger statements e.g. browser breakpoints.
