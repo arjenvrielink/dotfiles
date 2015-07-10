@@ -90,7 +90,9 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 autocmd BufWritePost *.py call Flake8()
 let g:flake8_ignore="E501,W293"
 
-" Markdown to HTML
+" Markdown
+autocmd BufNewFile,BufRead *.md,*.mkdn,*.markdown :set filetype=markdown
+" to HTML
 nmap <leader>md :%!/usr/bin/markdown <CR>
 
 " Python environment for buildout and virutalenv
@@ -137,3 +139,9 @@ endfunction
 " au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsListSnippets="<c-e>"
+
+" yanks also end up on the system clipboard
+set clipboard=unnamedplus
+
+" use git to find files with Command-T
+let g:CommandTFileScanner='git'
