@@ -92,10 +92,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # ssh server aliases
-alias maude='ssh root@maude'
-alias maude_arjen='ssh arjen@maude'
-alias bunny='ssh root@bunny'
-alias cynthia='ssh root@cynthia'
 alias ashost='ssh root@62.212.132.180'
 
 # redcube
